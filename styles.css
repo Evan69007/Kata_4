@@ -1,0 +1,149 @@
+header {
+	background-color: white;
+	height: 64px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"logo menu";
+	position: sticky;
+	overflow: visible;
+	top: 0;
+	padding-left: 10px;
+	/* padding-top: 40px; */
+}
+
+header svg {
+	float: left;
+	display: block;
+	padding-top: 20px;
+}
+
+header select {
+	background-image: url("./img/Container.png");
+	background-repeat: no-repeat;
+	background-position: 10px;
+	width: 44;
+	height: 44;
+	appearance: none;
+	border: none;
+	float: left;
+	display: block;
+}
+
+header select:hover {
+	border: none;
+}
+
+header select:focus{
+	outline: none;
+}
+
+.logo {
+	grid-area: logo;
+	justify-self: start;
+}
+
+.menu {
+	grid-area: menu;
+	justify-self: end;
+}
+
+main {  
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "text"
+	  "recipes";
+	justify-items: center;
+}
+  
+.text { grid-area: text; }
+
+.text h1{
+	justify-self: center;
+	font-family: font family/Font 2;
+	font-weight: font weight/700;
+	font-size: 53.81px;
+	line-height: line height/67_2;
+	letter-spacing: letter spacing/-1_12;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 60px;
+}
+
+.text p {
+	padding-bottom: 40px;
+}
+  
+.recipes { 
+	grid-area: recipes; 
+	justify-self: left;
+	background-color: #c0cc9b;
+	padding-top: 48px;
+	padding-right: 16px;
+	padding-bottom: 48px;
+	padding-left: 16px;
+	border-top-left-radius: 32px;
+	border-top-right-radius: 32px;
+	width: 100%;
+	position: relative;
+	gap: 64px;
+}
+
+.recipes h4{
+	color: #87A330;
+}
+
+.recipes h2{
+	color: var(--color-chartreuse-green-13, #243010);
+	font-family: font family/Font 2;
+	font-weight: font weight/700;
+	font-size: 37.34px;
+	line-height: line height/48;
+	letter-spacing: 0%;
+}
+
+footer {
+	background-color: black;
+	display: grid;
+	color: #C0CC9B;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	justify-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+footer a {
+	padding-top: 15px;
+	color: greenyellow;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: white;
+}
+  
+.title { grid-area: 1 / 1 / 2 / 2; }
+  
+.description { grid-area: 2 / 1 / 3 / 2; }
+  
+.logo { grid-area: 1 / 1 / 2 / 2; }
+  
+.yoga { grid-area: 2 / 1 / 3 / 2; }
+  
+.events { grid-area: 3 / 1 / 4 / 2; }
+  
+.recettes { grid-area: 4 / 1 / 5 / 2; }
+  
+.blog { grid-area: 5 / 1 / 6 / 2; }
+  
+.contact { grid-area: 6 / 1 / 7 / 2; }
+  
