@@ -10,7 +10,7 @@ header {
 	overflow: visible;
 	top: 0;
 	padding-left: 10px;
-	/* padding-top: 40px; */
+	padding-top: 30px;
 }
 
 header svg {
@@ -84,21 +84,32 @@ main {
 	justify-self: left;
 	background-color: #c0cc9b;
 	padding-top: 48px;
-	padding-right: 16px;
 	padding-bottom: 48px;
-	padding-left: 16px;
 	border-top-left-radius: 32px;
 	border-top-right-radius: 32px;
 	width: 100%;
-	position: relative;
 	gap: 64px;
 }
 
 .recipes h4{
+	padding-left: 16px;
 	color: #87A330;
 }
 
+.card_one {
+	background-color: white;
+	border-radius: 16px;
+	padding-left: 5px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.card_one img {
+	position: relative;
+}
+
 .recipes h2{
+	padding-left: 16px;
 	color: var(--color-chartreuse-green-13, #243010);
 	font-family: font family/Font 2;
 	font-weight: font weight/700;
